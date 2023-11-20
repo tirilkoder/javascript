@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    /*Light Mode*/
+    --background: #f7b3fd;
+    --header: #cbfdcf;
+    --text_light: #0f0f0f;
+    --line: #0f0f0f;
+    --footer:#7cd6a1;
+
+    --button_border: #0f0f0f;
+    --button_background: #c3c3c3;
+    --circle_color: #bb88c9;
+
+    /*Christmas mode*/
+    --red_mode: #f05050;
+    --text_red: #fdfdfd;
+    --circle_color_red: #d38f8f;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 0;
+    background-color: var(--background);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.light_mode {
+    background-color: var(--background);
+    color: var(--text_light);
+}
+
+.christmas_mode {
+    background-color:var(--red_mode);
+    color: var(--text_red);
+
+    .toggle_button::before {
+        transform: translateX(2.6875rem);
+    }
+
+    .toggle_button::before {
+        background-color: var(--circle_color_red);
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    background-color: var(--header);
+}
+
+.section {
+    height: 100vh; 
+    margin-top: 20px;
+    display: flex; 
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hr {
+    width: 500px;
+    background-color: var(--line);
+    height: 0.125rem;
+    border-width: 0;
+}
+
+.toggle_button {
+    background-color: var(--button_background);
+    border: 1px solid var(--button_border);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 1.33rem;
+    cursor: pointer;
+    padding: 0.66rem;
+    height: 20px;
+    width: 60px;
+    position: relative;
+    transition: var(--default-transition);
+}
+
+.toggle_button::before {
+    content: '';
+    position:absolute;
+    width: 2.22rem;
+    height: 2.22rem;
+    background-color: var(--circle_color);
+    border-radius: 50px;
+    z-index: 0;
+    left:0;
+    transform: translateX(0.22rem);
+    transition: var(--default-transition);
+}
+
+.toggle_button svg {
+    z-index: 1;
+}
+
+h1 {
+    font-size: 1.25rem;
+    margin: 0;
+    color: var(--text_light); 
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 3.125rem;
+    background-color: var(--footer) ;  
+    font-size:  0.875rem;
+    color: var(--text_light);
+}
