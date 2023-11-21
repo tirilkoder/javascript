@@ -3,7 +3,7 @@
 
 :root {
     /*Light Mode*/
-    --background: #f7b3fd;
+    --background: #f7ffb0; /*#ffdfdf/* #fffba0*/
     --header: #cbfdcf;
     --text_light: #0f0f0f;
     --line: #0f0f0f;
@@ -11,7 +11,7 @@
 
     --button_border: #0f0f0f;
     --button_background: #b1b1b1;
-    --circle_color: #f589ff;
+    --circle_color: #f2ff7c;
 
     /*Christmas mode*/
     --red_mode: #f05050;
