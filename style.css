@@ -40,9 +40,6 @@ body {
 
     .toggle_button::before {
         transform: translateX(2.6875rem);
-    }
-
-    .toggle_button::before {
         background-color: var(--circle_color_red);
     }
 }
@@ -68,7 +65,7 @@ header {
 .hr {
     width: 500px;
     background-color: var(--line);
-    height: 0.125rem;
+    height: 1px;
     border-width: 0;
 }
 
@@ -76,7 +73,7 @@ button {
     all:unset;
 }
 
-.toggle_button {
+.toggle_button, .toggle {
     background-color: var(--button_background);
     border: 1px solid var(--button_border);
     border-radius: 50px;
@@ -88,6 +85,7 @@ button {
     height: 20px;
     width: 60px;
     position: relative;
+    margin-top: 10px;
 }
 
 .toggle_button::before {
