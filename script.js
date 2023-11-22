@@ -1,4 +1,4 @@
-// Task one
+// TASK ONE
 
 // Button one
 
@@ -31,3 +31,17 @@ function themeToggle() {
 
 // Add an event listener to the div class, listening for a "click" event, and preforming the function when activated
 button_1.addEventListener("click", themeToggle);
+
+
+
+//TASK TWO
+
+//Part one
+const image = document.querySelector(".task_one_image");
+
+function imageSize() {
+    image.classList.toggle("task_one_image_big");
+}
+
+image.addEventListener("click", imageSize);
+
