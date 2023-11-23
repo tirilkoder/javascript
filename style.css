@@ -131,11 +131,45 @@ button {
 }
 
 .task_one_image_big {
-	max-height: 90%;
-	max-width: 90%;
+	max-height: 80%;
+	max-width: 80%;
     cursor: pointer;
 }
 
+/* Task 2 wednesday */
+
+.task_two_div {
+	display: flex;
+	width: 800px;
+    height: 800px;
+	gap: 1em;
+	justify-content: center;
+    align-items: center;
+}
+
+.image_one {
+    max-height: 30%;
+	max-width: 30%;
+    cursor: pointer;
+}
+
+.image_one_big {
+    max-height: 70%;
+	max-width: 70%;
+    cursor: pointer;
+}
+
+.task_two_image {
+	max-height: 22%;
+	max-width: 22%;
+    cursor: pointer;
+}
+
+.task_two_image_big {
+	max-height: 51%;
+	max-width: 60%;
+    cursor: pointer;
+}
 
 footer {
     display: flex;
