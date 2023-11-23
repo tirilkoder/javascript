@@ -1,5 +1,4 @@
 // TASK ONE
-
 // Button one
 
 // Find and store a reference to the class "toggle_button" in the html document
@@ -13,35 +12,47 @@ function themeToggle() {
     body.classList.toggle("christmas_mode");
 }    
 
-// Add an event listener to the div class, listening for a "click" event, and preforming the function when activated
+// Eventlistener, listening for a "click" event, and preforming the function when clicked
 button.addEventListener("click", themeToggle);
 
-//Button two
+// TASK TWO
+// Button two
 
-// Find and store a reference to the class "toggle_button" in the html document
 const button_1 = document.querySelector(".toggle");
 
 function themeToggle() {
-    // Find and store a reference to the class "body" in the html document
     const body = document.querySelector("body");
-
-    // Toggle the class "red_mode" on the class "body"
     body.classList.toggle("christmas_mode");
 }    
 
-// Add an event listener to the div class, listening for a "click" event, and preforming the function when activated
 button_1.addEventListener("click", themeToggle);
 
 
 
-//TASK TWO
+// TASK THREE
+// Part one
 
-//Part one
+// Find and store a reference to the class in the html document
 const image = document.querySelector(".task_one_image");
 
+// Function that toggles the class
 function imageSize() {
     image.classList.toggle("task_one_image_big");
 }
 
 image.addEventListener("click", imageSize);
 
+// TASK FOUR
+// Part two
+
+
+const photo = document.querySelector(".task_two_image");
+const img = document.querySelector(".image_one")
+
+function photoSize() {
+    img.classList.toggle("image_one_big");
+    photo.classList.toggle("task_two_image_big");
+}
+
+img.addEventListener("click", photoSize);
+photo.addEventListener("click", photoSize);
