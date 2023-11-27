@@ -1,4 +1,4 @@
-// TASK ONE
+// WEEK ONE - TASK ONE
 // Button one
 
 // Find and store a reference to the class "toggle_button" in the html document
@@ -45,7 +45,6 @@ image.addEventListener("click", imageSize);
 // TASK FOUR
 // Part two
 
-
 const photo = document.querySelector(".task_two_image");
 const img = document.querySelector(".image_one")
 
@@ -56,3 +55,38 @@ function photoSize() {
 
 img.addEventListener("click", photoSize);
 photo.addEventListener("click", photoSize);
+
+
+// WEEK TWO - TASK ONE
+// Part one
+
+// Find and store a reference to the class in the html document
+const infoForm = document.querySelector("#info_form");
+const username = document.querySelector("#name");
+const infoList = document.querySelector("#info_list");
+const buttonAdd = document.querySelector(".button_add");
+
+//Function that adds new information as a paragraph
+function addInput() {
+    if (username.value) {
+        const newInfo = document.createElement("p");
+        newInfo.textContent = username.value;
+
+        // Adds the element we have created to the website
+        infoList.appendChild(newInfo);
+
+    } else {
+        alert("Skriv inn navn");
+    }
+}
+
+buttonAdd.addEventListener("click", addInput);
+
+//Prevents typical form submission behavior and listening to addInput()
+infoForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    addInput();
+});
+
+
+
