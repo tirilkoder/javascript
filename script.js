@@ -45,16 +45,29 @@ image.addEventListener("click", imageSize);
 // TASK FOUR
 // Part two
 
-const photo = document.querySelector(".task_two_image");
-const img = document.querySelector(".image_one")
+let photo = document.querySelectorAll(".image_one");
+// Loop through each element using a for loop
+for (let index = 0; index < photo.length; index++) {
+	let photoImage = photo[index];
 
-function photoSize() {
-    img.classList.toggle("image_one_big");
-    photo.classList.toggle("task_two_image_big");
+	// Adding event listener with an arrow function to activate
+	photoImage.addEventListener("click", () => {
+		// Making the clicked image bigger
+		photoImage.classList.toggle("image_one_big");
+	});
 }
 
-img.addEventListener("click", photoSize);
-photo.addEventListener("click", photoSize);
+let photo_two = document.querySelectorAll(".task_two_image");
+
+for (let index = 0; index < photo_two.length; index++) {
+	let photo = photo_two[index];
+
+	photo.addEventListener("click", () => {
+		
+		photo.classList.toggle("task_two_image_big");
+	});
+}
+
 
 
 // WEEK TWO - TASK ONE
@@ -66,10 +79,11 @@ const username = document.querySelector("#name");
 const infoList = document.querySelector("#info_list");
 const buttonAdd = document.querySelector(".button_add");
 
-//Function that adds new information as a paragraph
+// Function that adds new information as a paragraph
 function addInput() {
     if (username.value) {
         const newInfo = document.createElement("p");
+        
         newInfo.textContent = username.value;
 
         // Adds the element we have created to the website
@@ -87,6 +101,3 @@ infoForm.addEventListener("submit", function(event) {
     event.preventDefault();
     addInput();
 });
-
-
-
