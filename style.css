@@ -72,7 +72,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Week 1 
+/* WEEK 1 
 Task one and two monday */
 .light_mode {
     background-color: var(--background);
@@ -179,9 +179,9 @@ button {
 }
 
 
-/* week 2 
-Task 1 monday*/
-.input {
+/* WEEK 2 
+Task 1 and 2 monday*/
+.input, .input_2 {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -198,17 +198,16 @@ Task 1 monday*/
     padding: 10px 5px 5px 0;
 }
 
-#info_form {
+#info_form, #info_form_2 {
     display: flex;
     flex-direction: column;
 }
 
-.button_add {
+.button_add, .button_submit {
     cursor: pointer;
     padding: 5px 10px;
     background-color: var(--button_form);
     color: var(--text_light);
-    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     width: auto;
     border-radius: 8px;
@@ -219,6 +218,15 @@ Task 1 monday*/
 #info_list {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+#info_list_ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding-bottom: 5px;
 }
 
 footer {
