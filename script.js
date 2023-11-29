@@ -101,3 +101,38 @@ infoForm.addEventListener("submit", function(event) {
     event.preventDefault();
     addInput();
 });
+
+// TASK TWO
+// Part two
+const infoForms = document.querySelector("#info_form_2");
+const userName = document.querySelector("#name_2");
+const email = document.querySelector("#email");
+const password = document.querySelector("#password");
+const ulInfo = document.querySelector("#info_list_ul");
+const buttonSubmit = document.querySelector(".button_submit");
+
+function addInfo() {
+    if (userName.value) {
+        const newName = document.createElement("li");
+        const newEmail = document.createElement("li");
+	    const newPassword = document.createElement("li");
+    
+        newName.textContent = userName.value;
+        newEmail.textContent = email.value;
+        newPassword.textContent = password.value;
+
+	    // Appends the elements we have created to the website
+        ulInfo.appendChild(newName);
+        ulInfo.appendChild(newEmail);
+        ulInfo.appendChild(newPassword);
+        
+    } else {
+        alert("Skriv inn i alle felt");
+    }
+}
+buttonSubmit.addEventListener("click", addInfo);
+
+infoForms.addEventListener("submit", function(event) {
+    event.preventDefault();
+    addInfo();
+});
