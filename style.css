@@ -19,6 +19,8 @@
     --button_form: #d3d1d1;
     --border_button_form: #7a7a7a;
 
+    --ul: #7cd6a1;
+
     /*Christmas mode*/
     --red_mode: #f05050;
     --text_red: #fdfdfd;
@@ -58,6 +60,7 @@ header {
     background-color: var(--line);
     height: 1px;
     border-width: 0;
+    margin: 0;
 }
 
 h1 {
@@ -70,6 +73,7 @@ h2 {
     margin: 0;
     font-size: 1.25rem;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 /* WEEK 1 
@@ -228,6 +232,57 @@ Task 1 and 2 monday*/
 li {
     padding-bottom: 5px;
 }
+
+/* Task 1 wednesday*/
+.header_2 {
+    padding: 0;
+    background-color: var(--ul);
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column-reverse;
+}
+
+.hamburger_button {
+	display: flex;
+	height: 32px;
+	width: 32px;
+	padding: 1em;
+    cursor: pointer;
+}
+
+.ul {
+	list-style-type: none;
+	padding: 5px 0 5px 0;
+	gap: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100px;
+    background-color: var(--header);
+}
+
+.li_burger {
+    text-decoration: none;
+    color: var(--text_light);
+    font-weight: bold;
+}
+
+.li_burger:hover {
+    background-color: #7eff89;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav_hidden {
+	display: none;
+	padding: 0 1em 1em 0;
+}
+
 
 footer {
     display: flex;
