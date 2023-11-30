@@ -136,3 +136,28 @@ infoForms.addEventListener("submit", function(event) {
     event.preventDefault();
     addInfo();
 });
+
+
+// TASK THREE
+// Part one
+
+const navBar = document.querySelector(".ul");
+const hamburger = document.querySelector(".hamburger_button");
+
+// tracks if the navbar is opened or not
+let navOpen = false;
+
+// toggles navbar and changes the styling
+function toggleNav() {
+    if(navOpen === false) {
+        navBar.classList = "ul";
+        navOpen = true;
+    } 
+    else {
+        navBar.classList = "nav_hidden";
+        hamburger.classList = "hamburger_button"
+        navOpen = false;
+    }
+}
+
+hamburger.addEventListener("click", toggleNav);
