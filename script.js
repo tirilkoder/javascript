@@ -155,9 +155,32 @@ function toggleNav() {
     } 
     else {
         navBar.classList = "nav_hidden";
-        hamburger.classList = "hamburger_button"
+        hamburger.classList = "hamburger_button";
         navOpen = false;
     }
 }
 
 hamburger.addEventListener("click", toggleNav);
+
+
+// TASK THREE
+// Part two
+
+const navBar_2 = document.querySelector(".ul_2");
+const hamburger_2 = document.querySelector(".hamburger_button_2");
+
+let navOpen_2 = false;
+
+function toggleNav_2() {
+    if(navOpen_2 === false) {
+        navBar_2.classList = "nav_hidden_2";
+        navOpen_2 = true;
+    } 
+    else {
+        navBar_2.classList = "nav_show_2";
+        hamburger_2.classList = "hamburger_button_2";
+        navOpen_2 = false;
+    }
+}
+
+hamburger_2.addEventListener("click", toggleNav_2);
